@@ -115,9 +115,9 @@
     ];
 
     //give each synth a different oscillator
-    synths[0].oscillator.type = "square";
-    synths[1].oscillator.type = "fatsawtooth";
-    synths[2].oscillator.type = "pwm"; 
+    synths[0].oscillator.type = 'pulse';
+    synths[1].oscillator.type = 'fatsine';
+    synths[2].oscillator.type = 'sawtooth';
 
     //gain is incredibly important here, without this rather low setting, the sounds created by different oscillators could be ear-splitting and even damage speakers
     const gain = new Tone.Gain(0.2);
